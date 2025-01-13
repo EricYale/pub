@@ -1,0 +1,8 @@
+# Clang format file to conform to CPSC 223 style guide
+# Author: Eric Yoon '27
+# License: PUBLIC DOMAIN
+
+ColumnLimit: 80                           # Rule 1
+IndentWidth: 4                            # Rule 2
+MaxEmptyLinesToKeep: 1                    # Rule 3
+SpaceBeforeAssignmentOperators: true      # Rule 4

@@ -1,0 +1,6 @@
+# Clang tidy file to conform to CPSC 223 style guide
+# Author: Eric Yoon '27
+# License: PUBLIC DOMAIN
+
+Checks:
+  - readability-isolate-declaration   # Rule 5

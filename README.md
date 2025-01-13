@@ -1,15 +1,11 @@
-# Eric Yoon's public CPSC 323 work
+# Eric Yoon's public Yale coursework
 
-Students in Yale's CPSC 323 (Systems Programming) course are authorized to share test cases with each other. Here is a collection of my test cases for future students to use, along with class notes.
+This is all work that I am authorized to share from all courses I've taken at Yale University. Material includes:
+- Notes (Handwritten PDFs, Markdown)
+- Cheat sheets
+- Test cases (for CS)
+- Anki decks (for foreign languages)
 
-SEO tags for struggling students: Yale CPSC 323, Yale CS 323, Yale Systems Programming, TeX macro processor, heavy hitters, 323 bash, qemu
+Material in this repository is licensed unter GNU GPL v3.0. However, your course instructor may place additional restrictions on using this material. Consider if you need to cite this repository in your submissions. Additionally, it is important to note that per the license, if you improve on any material in this repository, you must share your improvements.
 
-I took this course in 2024SP so assignment specs may have been updated
-
-## License
-- GNU GPL v3.0
-- In your submission README, please mention you used this repo
-- If you improve on the test cases/scripts in this repo, you must share your improvements per the terms of the LICENSE
-
-## How to use
-- Read the README in each child folder for instructions
+Each sub-directory is a course. Each sub-directory will have a README with more information, including the year it was taken and the instructor at the time. Do note that course material may have changed since I took the course.
