@@ -1,5 +1,7 @@
 # CPSC 223: Data Structures and Programming Techniques
 
+_Also listed as CPSC 2230_
+
 Taken in 2023FA with Professors Alan Weide and Ozan Erat.
 
 - See `lint` directory for a linter to format your code to the course's style guide
