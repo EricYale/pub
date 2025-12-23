@@ -21,3 +21,6 @@ Imagine we have an $\real^2 \rightarrow \real^2$ function (such as a vector fiel
 We can use a coloring lemma similar to the 1D version to prove the 2D IVT.
 
 ![2D coloring lemma](./resources/2d-ivt-2.png)
+
+## General Result
+**Brouwer's Fixed Point Theorem**: Let $K \subset \real^n$ be a convex and compact set and $F: K \to K$ be a continuous function. There exists $x^\star \in K$ such that $F(x^\star) = x^\star$.

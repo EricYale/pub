@@ -15,7 +15,7 @@ The agent's goal is to find a sequence $p^1, \dots, p^T$ that maximizes $\overse
 
 Note that this game is totally unfair, since the adversary picks the rewards _after_ seeing the agent's strategy!
 
-Even when playing perfectly, the agent can only get a maximum guaranteed reward of $T/2$ for a smart adversary.
+Even when playing perfectly, the agent can only get a maximum guaranteed reward of $T/2$ for a smart adversary. We can change this if we use randomness (i.e. a mixed strategy).
 
 
 
@@ -26,7 +26,7 @@ $$
 R_p(T) = \underset{a \in S}{\max} \underset{t=1}{\overset{T}{\sum}} r^t(a) - \underset{t=1}{\overset{T}{\sum}} r^t(p^t)
 $$
 
-- $a^\star = \underset{a \in S}{\argmax} \underset{t=1}{\overset{T}{\sum}} r^t(a)$ is the best action in hindsight.
+- $a^\star = \underset{a \in S}{\argmax} \underset{t=1}{\overset{T}{\sum}} r^t(a)$ is the best **_single pure strategy_** in hindsight.
 
 ## No-Regret Algorithm
 An algorithm $A$ is a **no-regret algirithm** if for any $r^1, \dots, r^T$, it achieves
@@ -35,6 +35,8 @@ $$
 $$
 
 That is, average regret converges to zero as the number of rounds played ($T$) goes to infinity.
+
+> Remember, regret is compared with the best single pure strategy evaluated in hindsight!
 
 ### Be The Leader
 "Be The Leader" algorithm simply says to do whatever action minimizes total regret.
@@ -70,3 +72,7 @@ This algorithm's regret will be at most $u \cdot T$ larger than the regret of "B
 If we choose the exponential mechanism as the softmax function with parameter $\epsilon = \sqrt{\frac{\log m}{T}}$, we have regret at most $O( \sqrt{\frac{\log m}{T}})$.
 
 $O( \sqrt{\frac{\log m}{T}})$ approaches 0 as $T \to \infty$, so FTRL is a no-regret algorithm.
+
+## Usage and Relevance
+
+You can use online learning to find coarse-correlated equilibria, which will be described in [the next section](./13-correlated-equilibria.md).
